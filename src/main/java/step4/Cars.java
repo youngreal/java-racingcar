@@ -20,9 +20,9 @@ public class Cars {
         return map;
     }
 
-    public void moveCar(RandomNumber randomNumber) {;
+    public void moveCar(RandomNumber randomNumber) {
         for (Car car : cars) {
-            car.moveLocation(randomNumber.generateRandomNumber());
+            car.moveLocation(randomNumber, randomNumber.generateRandomNumber());
         }
     }
 

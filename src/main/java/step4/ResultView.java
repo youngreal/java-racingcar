@@ -17,7 +17,10 @@ public class ResultView {
 
     private static void makeRacingMessage(Map<String, Integer> cars, StringBuilder sb) {
         for (Map.Entry<String, Integer> entry : cars.entrySet()) {
-            sb.append(entry.getKey()).append(" : ").append("-".repeat(entry.getValue())).append("\n");
+            sb.append(entry.getKey())
+                    .append(" : ")
+                    .append("-".repeat(entry.getValue()))
+                    .append("\n");
         }
     }
 }

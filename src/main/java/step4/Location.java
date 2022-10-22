@@ -13,6 +13,10 @@ public class Location {
         return new Location(this.position + 1);
     }
 
+    boolean isMaxLocation(int maxPosition) {
+        return maxPosition == this.position;
+    }
+
     public int getPosition() {
         return position;
     }
